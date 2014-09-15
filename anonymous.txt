@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() {
+	
+	int a = 0;
+	int b = 99;
+	
+	while ((b <= 100) and (b >= 0))
+	{
+		b = b - 1;
+		a = a + 1;
+		if ( (a % 3 == 0) and (a % 5 != 0) )
+			cout <<"Anonymous, ";
+		else if ( (a % 5 == 0) and (a % 3 != 0) )
+			cout << "Llama, ";
+		else if ( (a % 3 == 0) and (a % 5 ==0) )
+			cout << "AnonymousLlama, ";
+		else
+			cout << a << ", ";
+		
+	}
+	return 0;
+}
