@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+ 
+int main ()
+{
+	char name;
+	int score;
+	cout << "What is your Name : ";
+	cin >> name;
+	cout << "Welcome " << name <<endl;
+	cout << "Please input your score " << name;
+	cin >> score;
+ 
+		if ( score == 100 )
+			cout << "Congratulation ! You done a very good job ! You are Perfect ! Thank you !" <<endl;
+		else if ( score > 89 )
+			cout << "Congratulation ! You done a good job ! You scored A ! Thank you !" <<endl;
+		else if ( score > 79 )
+			cout << "Congratulation ! You done a good job ! You scored B ! Thank you !" <<endl;
+		else if ( score > 69 )
+			cout << "Congratulation ! You done a good job ! You scored C ! Thank you !" <<endl;	
+		else if ( score > 59 )
+			cout << " Good Job ! All the best for your future enhancement ! You scored D ! Thank you !" <<endl;
+		else if ( score > 0 )
+			cout << "Good try ! You should improve more and all the best for your future enhancement! You scored F ! Thank you !" <<endl;
+		else 
+			cout << "Sorry Wrong Input ! Please input your score correcty" << endl;
+	return 0;
+}
